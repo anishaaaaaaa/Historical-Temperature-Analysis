@@ -7,5 +7,5 @@ from . import views
 
 urlpatterns = [
     path('histtemp', views.history),
-    url(r'^plot/$', TemplateView.as_view(template_name='plot.html'), name="plot"),
+    path('newpage/', views.new_page, name="my_function")
 ]
